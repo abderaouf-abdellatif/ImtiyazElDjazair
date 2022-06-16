@@ -81,7 +81,10 @@ const Highlight = styled.div`
     margin: 10px 0px;
     display: flex;
     align-items: center;
-    font-size: 20px ;
+    font-size: 24px;
+    @media ${device.laptop} { 
+        font-size: 20px ;
+    }
 `
 const Fonctionalities = styled.div`
     margin: 50px 0px;
