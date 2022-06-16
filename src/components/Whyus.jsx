@@ -30,37 +30,44 @@ const TitleContainer = styled.div`
     
 `;
 const Title = styled.h2`
-    font-size: 18px;
-    margin-bottom: 8px;
-    padding: 15px 20px;
-    border: 1px rgba(33, 37, 41,0.5) solid;
-    @media only screen and (max-width: 500px){
+    @media (min-width: 500px){
+        font-size: 18px;
+        margin-bottom: 8px;
+        padding: 15px 20px;
+        border: 1px rgba(33, 37, 41,0.5) solid;
+    }
+    @media (min-width: 100px){
         display: none;
+    }
+`;
+const TitleTwo = styled.h2`
+    @media (min-width: 500px){
+        display: none;
+        font-size: 18px;
+        margin-bottom: 8px;
+        padding: 15px 20px;
+        border: 1px rgba(33, 37, 41, 0.5) solid;
+    }
+    @media (min-width: 100px){
+        display: unset;
     }
     
 `;
-const TitleTwo = styled.h2`
-    display: none;
-    font-size: 18px;
-    margin-bottom: 8px;
-    padding: 15px 20px;
-    border: 1px rgba(33, 37, 41,0.5) solid;
-    @media only screen and (max-width: 500px){
-        display: unset;
-    }
-`;
 const InfoContainer = styled.div`
-    width: 80%;
-    font-size:16px;
-    color:#212529;
-    padding: 0px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @media only screen and (max-width: 500px){
+    @media (min-width: 500px){
+        width: 80%;
+        font-size:16px;
+        color:#212529;
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (min-width: 100px){
         display: none;
     }
+    
 `;
 const InfoCategorie = styled.div`
     width: 62.5%;
@@ -154,13 +161,21 @@ const DescriptionParagraph = styled.p`
 `;
 
 const InfoContainerRes = styled.div`
-    display: none;
-    @media only screen and (max-width: 500px){
+    @media (min-width: 500px){
+        display: none;
+    }
+    @media (min-width: 100px){
         display: flex;
         flex-direction: column;
         align-items: center;
         
     }
+    
+`;
+const InfoContainerResTitle = styled.h3`
+    width: 60%;
+    text-align: center;
+    margin: 10px 0px;
 `;
 const CategorieRes = styled.div`
     
@@ -206,6 +221,12 @@ const Whyus = () => {
                 </InfoDescription>
             </InfoContainer>
             <InfoContainerRes>
+                <InfoContainerResTitle>
+                    Imtiyaz El Djazair it the best English School ever!
+                </InfoContainerResTitle>
+                <InfoContainerResTitle>
+                    Why Choose Us?
+                </InfoContainerResTitle>
                 <CategorieRes>
                     <CategorieTitle>BEST EDCUATION </CategorieTitle>
                     <DescriptionParagraph>
