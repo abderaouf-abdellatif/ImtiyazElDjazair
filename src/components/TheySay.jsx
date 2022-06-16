@@ -3,15 +3,14 @@ import KeyboardArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardArrowLeft
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import styled from 'styled-components';
 import { TheySayItems } from '../../src/data'
+import { device } from '../device';
 const MainDiv = styled.div`
-    height : 110vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @media only screen and (max-width: 500px){
-        height: 110vh;
-    }
+    
 `;
 const Container = styled.div`
     width : 100%;
@@ -21,8 +20,6 @@ const Container = styled.div`
 `;
 
 const Arrow = styled.div`
-     width : 60px;
-    height : 60px;
     border-radius : 50%;
     background-color: rgba(245, 164, 37,0.8);
     color:white;
@@ -31,7 +28,7 @@ const Arrow = styled.div`
     align-items : center;
     position : absolute;
     top: 0;
-    bottom : 30vh;    
+    bottom : 0;    
     left : ${props => props.direction === "left" && "10vw"};
     right : ${props => props.direction === "right" && "10vw"};
     margin : auto;
@@ -39,18 +36,21 @@ const Arrow = styled.div`
     opacity : 0.5;
     z-index: 4;
     transition: all 0.3s ease;
+    width:30px ;
+    height: 30px;
     &:hover{
+        width:30px ;
+        height: 30px;
+    }
+    @media ${device.laptop} { 
+        width : 60px;
+        height : 60px;
+        bottom: 30vh;
+        &:hover{
         background-color: rgb(245, 164, 37);
         width : 65px;
         height : 65px;
     }
-    @media only screen and (max-width: 500px){
-        width:30px ;
-        height: 30px;
-        &:hover{
-            width:30px ;
-            height: 30px;
-        }
     }
 `;
 
@@ -80,22 +80,21 @@ const InfoTitle = styled.h1`
     color: #F5A425;
 `;
 const Wrapper = styled.div`
-    height :100%;
     display: flex;
     transition : all 1.5s ease;
     transform: translateX( ${props => props.slideIndex * -100}vw);
-
-    @media only screen and (max-width: 500px) {
-        height: fit-content;
-
+    height: fit-content;
+    @media ${device.laptop} { 
+        
     }
 `;
 const Slide = styled.div`
-    height : 100vh;
+    height: auto;
     width : 100vw;
     text-align: center;
     align-items : center;
     position: relative;
+    padding-bottom: 40px;
  `;
 
 
@@ -104,10 +103,8 @@ const ContainerTwo = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    @media only screen and (max-width: 500px){
-        height: fit-content;
-
-    }
+    height: fit-content;
+    
 `;
 const ContainerThree= styled.div`
     width: 50%;
@@ -123,26 +120,27 @@ const Line = styled.span`
     
 `;
 const Image = styled.img`
-    height: 200px;
-    width: 200px;
-    margin-bottom: 48px;
-    @media only screen and (max-width: 500px){
-        width:100px ;
-        height:100px;
-       
+    margin-bottom: 20px;
+    width:100px ;
+    height:100px;
+    @media ${device.laptop} { 
+        height: 200px;
+        width: 200px;
+        margin-bottom: 40px;
     }
 `;
 const Paragraph = styled.span`
-    font-size: 24px;
     margin: 0px 0px 16px;
     text-align: center;
-    @media only screen and (max-width: 500px){
-        font-size: 16px;
+    font-size: 16px;
+    @media ${device.laptop} {
+        font-size: 24px;
     }
 `;
 const Name = styled.h5`
     font-size: 20px;
     margin-bottom: 8px;
+    width: 80%;
 `;
 const Profession = styled.span`
     font-size: 16px;

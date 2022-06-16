@@ -7,17 +7,18 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-
+import { device } from '../device';
 const Container = styled.div`
     height: 40vh;
     background-color: #162239;
     color: white;
     display: flex;
     padding: 0px 20px;
-    @media only screen and (max-width: 500px){
-        flex-direction: column;
-        align-items: center;
-        height: auto;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    @media ${device.laptop}{
+        flex-direction: row;
     }
 `;
 const InfoContainer = styled.div`
@@ -29,8 +30,9 @@ const InfoContainer = styled.div`
 const Title = styled.h4`
     font-size: 24px;
     margin: 0px 0px 24px;
-    @media only screen and (max-width: 500px){
-        text-align: center;
+    text-align: center;
+    @media ${device.laptop}{
+        text-align: left;
     }
 `;
 const Info = styled.div`
@@ -46,8 +48,9 @@ const LinksContainer = styled.div`
     display:flex;
     flex-direction: column;
     padding: 20px;
-    @media only screen and (max-width: 500px){
-        display: none;
+    display: none;
+    @media ${device.laptop}{
+        display: unset;
     }
 `;
 const List = styled.ul`

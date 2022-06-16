@@ -88,11 +88,14 @@ const Highlight = styled.div`
 `
 const Fonctionalities = styled.div`
     margin: 50px 0px;
-    width: 80%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+    @media ${device.laptop} { 
+        width: 80%;
+        
+    }
 `;
 const Function = styled.div`
     margin-top: 20px;
