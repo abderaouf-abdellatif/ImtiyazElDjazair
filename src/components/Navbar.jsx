@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
+import { device } from '../device';
 const Container = styled.div`
     width: 100%;
     height: auto;
@@ -19,39 +20,40 @@ color: white;
 height: 80px;
 `;
 const Logo = styled.div`
-    padding-left: 60px;
+    padding-left: 20px;
     
     a{
         text-decoration: none;
     }
-
-    @media only screen and (max-width: 500px){
-        padding-left: 20px;
+    @media ${device.laptop} { 
+        padding-left: 60px;
     }
+    
 `;
 const LogoText = styled.a`
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     color:white;
     span{
         color:#F5A425;
     }
-    @media only screen and (max-width: 500px){
-       font-size: 28px;
+    @media ${device.laptop} { 
+        font-size: 36px;
     }
 
 `;
 
 const Menu = styled.ul`
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    padding-right: 60px;
-    height: 100%;
-    @media only screen and (max-width: 500px){
-        display: none;
+    display: none;
+    @media ${device.laptop} { 
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        padding-right: 60px;
+        height: 100%;
     }
+    
 `;
 const MenuItem = styled.li`
     height: 100%;
@@ -80,21 +82,21 @@ const MenuItemLink = styled.a`
     }
 `;
 const MenuHam = styled.div`
-    display: none;
-    @media only screen and (max-width: 500px) {
-        display: unset;
+    display: unset;
         padding-right: 2rem;
         cursor: pointer;
+    @media ${device.laptop} { 
+        display: none;
     }
 `;
 const MenuRes = styled.ul`
-    display: none;
-    @media only screen and (max-width: 500px){
-        transition: all 0.5s ease;
-        display: ${props => props.index === 0 && "none"};
-        display: ${props => props.index === 1 && "unset"};
-        list-style: none;
-        color: white;
+    transition: all 0.5s ease;
+    display: ${props => props.index === 0 && "none"};
+    display: ${props => props.index === 1 && "unset"};
+    list-style: none;
+    color: white;
+    @media ${device.laptop} { 
+        display: none;
     }
     
 `;

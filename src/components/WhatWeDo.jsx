@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { framesItems } from '../../src/data';
-
+import { device } from '../device';
 const Container = styled.div`
     color: #212529;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media only screen and (max-width: 500px){
-        height: auto;
+    @media ${device.laptop} { 
+        padding-bottom: 40px;    
     }
 `;
 const TitleContainer = styled.div`
@@ -34,25 +34,31 @@ const Title = styled.h2`
     letter-spacing: 2px;
 `;
 const InfoContainer = styled.div`
-    width: 80%;
+    width: 90%;
     font-size:16px;
     color:white;
     padding: 0px 15px;
     color: #212529;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    @media only screen and (max-width: 500px){
-        flex-direction: column;
+    @media ${device.laptop} { 
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
     }
 `;
 const InfoParagraph = styled.div`
-    width: 40%;
-    font-size: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
     span{
         width: 30%;
         height: 3px;
@@ -61,9 +67,9 @@ const InfoParagraph = styled.div`
         margin: 10px;
         
     }
-    @media only screen and (max-width: 500px){
-        width: 100%;
-        margin-bottom: 20px;
+    @media ${device.laptop} { 
+        width: 40%;
+        font-size: 20px;
     }
 `;
 const InfoHighlights = styled.div`
@@ -82,9 +88,8 @@ const Fonctionalities = styled.div`
     width: 80%;
     display: flex;
     justify-content: space-around;
-    @media only screen and (max-width: 500px){
-        flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
+    
 `;
 const Function = styled.div`
     margin-top: 20px;
@@ -96,12 +101,13 @@ const Function = styled.div`
     align-items: center;
     justify-content: center;
     transition: ease 0.5s all;
+    margin: 40px;
     &:hover{
         height: 120px;
         width: 120px;
     }
-    @media only screen and (max-width: 500px){
-        margin: 40px;
+    @media ${device.laptop} { 
+        margin: 0;
     }
 `;
 const LinkTo = styled.a`

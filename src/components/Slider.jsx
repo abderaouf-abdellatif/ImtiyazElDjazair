@@ -2,17 +2,19 @@ import KeyboardArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardArrowLeft
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { sliderItems } from '../../src/data'
+import { sliderItems } from '../../src/data';
+import {device} from '../device';
 const Container = styled.div`
-    width : 100%;
-    height : 90vh;
-    display : flex;
-    position : relative;
-    overflow: hidden;
-    
-    @media only screen and (max-width: 500px){
-        display: none;
+    display: none;
+    @media ${device.laptop} { 
+        display: unset;
+        width : 100%;
+        height : 90vh;
+        display : flex;
+        position : relative;
+        overflow: hidden;
     }
+    
 `;
 const Arrow = styled.div`
     width : 60px;

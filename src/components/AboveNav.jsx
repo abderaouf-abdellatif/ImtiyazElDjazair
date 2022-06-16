@@ -6,16 +6,18 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import  makeStyles  from "@mui/styles/makeStyles";
-
+import {device} from '../device'
 
 const Container = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @media only screen and (max-width: 500px){
-        display: none;
+    display: none;
+    @media ${device.laptop} { 
+        display: unset;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+    
 `;
 const InfoContainer = styled.div`
     padding: 8.5px 48px;

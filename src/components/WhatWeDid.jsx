@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { device } from '../device';
 const Container = styled.div`
     width: 100%;
-    height: 90vh;
+    height: auto;
     background-image: url(${(props) => props.imgUrl});
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,17 +35,18 @@ const Title = styled.h2`
     letter-spacing: 2px;
 `;
 const InfoContainer = styled.div`
+    margin-top: 20px;
     width: 80%;
     font-size:16px;
     color:white;
-    margin-top: 0px;
     padding: 0px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media only screen and (max-width: 500px){
-        margin-top: 20px;
+    @media ${device.laptop} { 
+        margin-top: 0px;
+        
     }
 `;
 const AchievementOne = styled.div`
@@ -59,12 +61,13 @@ const One = styled.div`
 
 `;
 const Span = styled.span`
+    height: 100px;
     width: 2px;
-    height: 200px;
     background-color: #F5A425;
     margin-right: 10px;
-    @media only screen and (max-width: 500px){
-        height: 100px;
+    @media ${device.laptop} { 
+        height: 200px;
+        
     }
 `;
 const Info = styled.div`
