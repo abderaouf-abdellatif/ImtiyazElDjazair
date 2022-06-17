@@ -36,12 +36,8 @@ const Arrow = styled.div`
     opacity : 0.5;
     z-index: 4;
     transition: all 0.3s ease;
-    width:30px ;
-    height: 30px;
-    &:hover{
-        width:30px ;
-        height: 30px;
-    }
+    width:70px ;
+    height:70px;
     @media ${device.laptop} { 
         width : 60px;
         height : 60px;
@@ -68,25 +64,29 @@ const TitleContainer = styled.div`
     }
 `;
 const Title = styled.h2`
-    font-size: 18px;
+    font-size: 36px;
     margin-bottom: 8px;
     padding: 15px 20px;
     border: 1px rgba(33, 37, 41,0.8) solid;
     letter-spacing: 2px;
+    @media ${device.laptop}{
+        font-size: 22px;
+
+    }
 `;
 const InfoTitle = styled.h1`
-    font-size: 40px;
+    font-size: 45px;
     margin: 0px 0px 24px;
     color: #F5A425;
+    @media ${device.laptop}{
+        font-size: 40px;
+    }
 `;
 const Wrapper = styled.div`
     display: flex;
     transition : all 1.5s ease;
     transform: translateX( ${props => props.slideIndex * -100}vw);
     height: fit-content;
-    @media ${device.laptop} { 
-        
-    }
 `;
 const Slide = styled.div`
     height: auto;
@@ -121,8 +121,8 @@ const Line = styled.span`
 `;
 const Image = styled.img`
     margin-bottom: 20px;
-    width:100px ;
-    height:100px;
+    width:200px ;
+    height:200px;
     @media ${device.laptop} { 
         height: 200px;
         width: 200px;
@@ -132,7 +132,7 @@ const Image = styled.img`
 const Paragraph = styled.span`
     margin: 0px 0px 16px;
     text-align: center;
-    font-size: 16px;
+    font-size: 30px;
     @media ${device.laptop} {
         font-size: 24px;
     }

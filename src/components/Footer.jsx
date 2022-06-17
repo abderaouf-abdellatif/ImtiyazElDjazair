@@ -28,19 +28,28 @@ const InfoContainer = styled.div`
     padding: 20px;
 `;
 const Title = styled.h4`
-    font-size: 24px;
     margin: 0px 0px 24px;
     text-align: center;
+    font-size: 36px;
+    letter-spacing: 0.2rem;
     @media ${device.laptop}{
+        font-size: 24px;
         text-align: left;
     }
 `;
 const Info = styled.div`
+    display: none;
     display: flex;
     align-items: center;
-    margin: 5px 0px;
+    font-size: 35px;
+    margin: 10px 0px;
     span{
         margin-left: 10px;
+    }
+    @media ${device.laptop} {
+        font-size: 16px;
+        margin: 5px 0px;
+
     }
 `;
 const LinksContainer = styled.div`
@@ -88,7 +97,7 @@ const ContactContainer = styled.div`
 const ContactButton = styled.button`
     margin: 20px 0px;
     padding: 15px 20px;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 600;
     background-color:transparent ;
     color : #F5A425;
@@ -98,6 +107,10 @@ const ContactButton = styled.button`
         background-color:transparent ;
         background-color: #F5A425;
         color: white;
+        
+    }
+    @media ${device.laptop}{
+        font-size: 16px;
 
     }
 `;
@@ -167,7 +180,7 @@ const Footer = () => {
             </LinksContainer>
             <ContactContainer>
                 <Title>Contact Us</Title>
-                <LinkTo href='/Contact'><ContactButton>Contact Us</ContactButton></LinkTo>
+                <LinkTo href='/Contact'><ContactButton>Contact</ContactButton></LinkTo>
                 <SocialMedia>
                 <a href="https://web.facebook.com/Imtiyaz-El-Djazair-105864575072264" target="_blank" rel="noreferrer">
                     <FacebookIcon style={{ color: "white", marginLeft: "10px", cursor: "pointer" }} />

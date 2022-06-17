@@ -21,13 +21,14 @@ const Wrapper = styled.div`
     `;
 const Logo = styled.div`
     padding-left: 20px;
+    height: 80px;
     
     a{
         text-decoration: none;
     }
     @media ${device.laptop} { 
-        height: 80px;
-        padding-left: 60px;
+        padding-left: 40px;
+        height: auto;
     }
     
 `;
@@ -42,6 +43,7 @@ const LogoText = styled.a`
     }
     @media ${device.laptop} { 
         font-size: 36px;
+        margin-left: 20px;
     }
 
 `;

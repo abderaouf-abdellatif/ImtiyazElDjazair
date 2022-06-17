@@ -27,11 +27,16 @@ const TitleContainer = styled.div`
     }
 `;
 const Title = styled.h2`
-    font-size: 18px;
+    font-size: 36px;
+    letter-spacing: 0.2rem;
     margin-bottom: 8px;
     padding: 15px 20px;
     border: 1px rgba(33, 37, 41,0.8) solid;
     letter-spacing: 2px;
+    @media ${device.laptop}{
+        font-size: 18px;
+
+    }
 `;
 const InfoContainer = styled.div`
     width: 90%;
@@ -52,13 +57,14 @@ const InfoContainer = styled.div`
 `;
 const InfoParagraph = styled.div`
     width: 80%;
+    font-size: 35px;
+    font-weight: 500;
     margin-bottom: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
     span{
         width: 30%;
         height: 3px;
@@ -81,9 +87,11 @@ const Highlight = styled.div`
     margin: 10px 0px;
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 35px;
+    margin-bottom: 15px;
     @media ${device.laptop} { 
         font-size: 20px ;
+        
     }
 `
 const Fonctionalities = styled.div`
@@ -98,22 +106,24 @@ const Fonctionalities = styled.div`
     }
 `;
 const Function = styled.div`
-    margin-top: 20px;
-    height: 100px;
-    width: 100px;
     cursor: pointer;
+    width: 200px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: ease 0.5s all;
     margin: 40px;
-    &:hover{
-        height: 120px;
-        width: 120px;
-    }
+    margin-bottom: 60px;
     @media ${device.laptop} { 
-        margin: 0;
+        height: 110px;
+        width: 110px;
+        margin: 5;
+        &:hover{
+            height: 120px;
+            width: 120px;
+        }
     }
 `;
 const LinkTo = styled.a`
@@ -125,14 +135,16 @@ const LinkTo = styled.a`
     justify-content: center;
 `;
 const Image = styled.img`
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
 `;
 const ImageTitle = styled.h5`
-    width: 100%;
     text-align:center;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 30px;
+    @media ${device.laptop}{
+        font-size: 16px;
+    }
 `;
 const WhatWeDo = () => {
     return (

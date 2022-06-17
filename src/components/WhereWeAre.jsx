@@ -27,11 +27,16 @@ const TitleContainer = styled.div`
     }
 `;
 const Title = styled.h2`
-    font-size: 18px;
+    font-size: 35px;
+    letter-spacing: 0.2rem;
     padding: 15px 20px;
     color: white;
     border: 1px rgba(255, 255, 255,0.8) solid;
     letter-spacing: 2px;
+    @media ${device.laptop}{
+        font-size: 22px;
+
+    }
 `;
 const MapContainer = styled.div`
     height: 50%;
