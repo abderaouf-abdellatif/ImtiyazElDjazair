@@ -41,7 +41,8 @@ const Title = styled.h2`
     
 `;
 const TitleTwo = styled.h2`
-    font-size: 18px;
+    font-size: 35px;
+    letter-spacing: 0.2rem;
     margin-bottom: 8px;
     padding: 15px 20px;
     border: 1px rgba(33, 37, 41,0.5) solid;
@@ -109,12 +110,17 @@ const CategorieThree = styled.div`
 `;
 
 const CategorieTitle = styled.h5`
-    font-size: 13px;
-    
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 0px 5px;
     z-index: 1;
+    color: #F5A425 ;
+    @media ${device.laptop}{
+        font-size: 13px;
+        margin: 10px 0px;
+        color: #212529;
+    }
 `;
 const InfoDescription = styled.div`
     width: 80%;
@@ -145,13 +151,17 @@ const DescriptionTitle = styled.h4`
 
 `;
 const DescriptionParagraph = styled.p`
-    font-size: 16px;
-    font-weight: 00;
+    font-weight: 500;
+    font-size: 30px;
     margin: 0px 0px 16px;
     letter-spacing: 1px;
     line-height: 26px;
     color: #212529;
     z-index: 1;
+    @media ${device.laptop}{
+        font-size: 18px;
+
+    }
 
 `;
 
@@ -165,14 +175,15 @@ const InfoContainerRes = styled.div`
     }
 `;
 const InfoContainerResTitle = styled.h3`
-    width: 60%;
+    width: 80%;
     text-align: center;
-    margin: 10px 0px;
+    margin: 15px 0px;
+    font-size: 28px;
 `;
 const CategorieRes = styled.div`
     
     text-align: center;
-    width: 90%;
+    width: 80%;
 `;
 
 const Whyus = () => {

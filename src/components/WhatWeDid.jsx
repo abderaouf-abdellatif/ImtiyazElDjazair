@@ -27,12 +27,15 @@ const TitleContainer = styled.div`
     }
 `;
 const Title = styled.h2`
-    font-size: 18px;
+    font-size: 35px;
     margin-bottom: 8px;
     padding: 15px 20px;
     color: white;
     border: 1px rgba(255, 255, 255,0.8) solid;
     letter-spacing: 2px;
+    @media ${device.laptop} {
+        font-size: 30px;
+    }
 `;
 const InfoContainer = styled.div`
     margin-top: 20px;
