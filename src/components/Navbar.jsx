@@ -86,8 +86,8 @@ const MenuItemLink = styled.a`
 `;
 const MenuHam = styled.div`
     display: unset;
-        padding-right: 2rem;
-        cursor: pointer;
+    padding-right: 4rem;
+    cursor: pointer;
     @media ${device.laptop} { 
         display: none;
     }
@@ -113,7 +113,7 @@ const MenuItemResLink = styled.a`
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
 `
 
@@ -136,7 +136,7 @@ const Navbar = ({ border }) => {
                     <MenuItem><MenuItemLink border={border === "contact"} href='/Contact'>CONTACT</MenuItemLink></MenuItem>
                 </Menu>
                 <MenuHam onClick={handleClick}>
-                    <MenuIcon />
+                    <MenuIcon style={{"fontSize" : "50px"}}/>
                 </MenuHam>
             </Wrapper>
             <MenuRes index={index}>
