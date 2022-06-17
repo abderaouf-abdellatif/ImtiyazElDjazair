@@ -12,13 +12,13 @@ const Container = styled.div`
     
 `;
 const Wrapper = styled.div`
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-color: white;
-height: 80px;
-`;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 100px;
+    `;
 const Logo = styled.div`
     padding-left: 20px;
     
@@ -26,12 +26,15 @@ const Logo = styled.div`
         text-decoration: none;
     }
     @media ${device.laptop} { 
+        height: 80px;
         padding-left: 60px;
     }
     
 `;
 const LogoText = styled.a`
-    font-size: 28px;
+    font-size: 36px;
+    margin-left: 40px;
+    letter-spacing: 1px;
     font-weight: bold;
     color:white;
     span{
