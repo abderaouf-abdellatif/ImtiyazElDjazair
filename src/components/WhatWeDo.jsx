@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import styled from 'styled-components';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { framesItems } from '../../src/data';
@@ -93,7 +93,7 @@ const Highlight = styled.div`
         font-size: 20px ;
         
     }
-`
+`;
 const Fonctionalities = styled.div`
     margin: 50px 0px;
     width: 60%;
@@ -107,8 +107,8 @@ const Fonctionalities = styled.div`
 `;
 const Function = styled.div`
     cursor: pointer;
-    width: 200px;
-    height: 200px;
+    width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -42,14 +42,13 @@ const Info = styled.div`
     display: flex;
     align-items: center;
     font-size: 35px;
-    margin: 10px 0px;
+    margin: 20px 0px;
     span{
-        margin-left: 10px;
+        margin-left: 15px;
     }
     @media ${device.laptop} {
         font-size: 16px;
         margin: 5px 0px;
-
     }
 `;
 const LinksContainer = styled.div`
@@ -126,7 +125,7 @@ const Footer = () => {
                 <Title>Find Us</Title>
                 <Info>
                     <LocationOnIcon style={{ fontSize : "16px !important", color :"#F5A425" }}/>
-                    <span>Banque AL Baraka, USTO, Bir El Djir - Oran 31000 </span>
+                    <span>Banque AL Baraka, USTO, Bir El Djir - Oran </span>
                 </Info>
                 <Info>
                     <PhoneIcon style={{ fontSize : "16px !important", color :"#F5A425" }}/>

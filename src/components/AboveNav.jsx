@@ -70,7 +70,7 @@ const AboveNav = () => {
             <InfoContainer>
                 <Address>
                     <LocationOnIcon style={{ color: "#F5A425", fontSize: "20px" }} />
-                    <span>Banque AL Baraka, USTO, Bir El Djir- Oran 31000</span>
+                    <span>Banque AL Baraka, USTO, Bir El Djir- Oran </span>
                 </Address>
                 <WorkingTime>
                     <AccessTimeIcon style={{ color: "#F5A425", fontSize: "20px" }} />
