@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import corporate from '../images/Corporate.png'
 import partners from '../images/partners.png'
-
+import { device } from '../device'
 const Container = styled.div`
     padding: 50px;
     display: flex;
@@ -11,44 +11,38 @@ const Container = styled.div`
     text-align: center;
 `;
 const Top = styled.div`
-    width: 90%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    @media only screen and (max-width: 500px){
-        flex-direction: column;
-        width: 100%;
-        
+    width: 100%;
+    @media ${device.laptop}{
+        width: 90%;
+        flex-direction:row ;
     }
 `;
 const TopText = styled.p`
-    width: 40%;
-    font-size: 22px;
+    width: 100%;
     letter-spacing: 1px;
+    margin-bottom: 15px;
     font-weight: 600;
-    @media only screen and (max-width: 500px){
-        width: 100%;
-        font-size: 18px;
-        margin-bottom: 15px;
+    @media ${device.laptop}{
+        width: 40%;
+        font-size: 22px;    
     }
 `;
 const TopImage = styled.div``;
 const Image = styled.img``;
 const Center = styled.div`
- @media only screen and (max-width: 500px){
         width: 100%;
-        
-    }
+ 
 `;
 const SubTitle = styled.h1`
     font-size: 40px;
     text-align: center;
     margin-top: 40px;
     color: #4782a4;
-    @media only screen and (max-width: 500px){
-        width: 100%;
-        font-size: 30px;
-    }
+    
 `;
 const BottomImage = styled.img`
     width: 100%;
@@ -62,26 +56,25 @@ const Bottom = styled.div`
 const Wrapper = styled.div`
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-around;
     width: 90%;
     margin: 40px 0px;
-    @media only screen and (max-width: 500px){
-        flex-direction: column;
-        
-        
+    @media ${device.laptop}{
+        flex-direction: row;
     }
 `;
 const CoraporateOne = styled.div`
     padding: 20px 25px;
-    width: 40%;
+    width: 100%;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.8);
     box-shadow: 0px 0px 25x -10px rgba(0, 0, 0, 0.8);
-    @media only screen and (max-width: 500px){
-        width: 100%;
-        margin-bottom: 30px;
+    @media ${device.laptop}{
+        width: 40%;
         
     }
 `;

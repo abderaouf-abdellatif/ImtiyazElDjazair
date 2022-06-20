@@ -107,7 +107,7 @@ const Fonctionalities = styled.div`
 `;
 const Function = styled.div`
     cursor: pointer;
-    width: 80%;
+    width: 60%;
     height: auto;
     display: flex;
     flex-direction: column;

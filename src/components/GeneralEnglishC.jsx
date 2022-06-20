@@ -9,6 +9,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import programme from '../images/programme.png'
 import levels from '../images/levels.png'
+import { device } from '../device';
 const Container = styled.div`
     margin: 80px;
     color: #162239;
@@ -17,12 +18,14 @@ const Container = styled.div`
     align-items: center;
 `;
 const Title = styled.h6`
-    font-size: 16px;
     margin: 0px 0px 8px;
     color: #F5A425;
-    @media only screen and (max-width: 500px){
-        font-size: 14px;
+    font-size: 24px;
+    @media ${device.laptop}{
+        font-size: 16px;
+
     }
+    
 `;
 const SubTitle = styled.h1`
     font-size: 40px;
@@ -38,26 +41,26 @@ const Wrapper = styled.div`
     align-items: center;
 `;
 const Top = styled.div`
-    width: 50%;
-    @media only screen and (max-width: 500px){
-        width: 100%;
-        
+    width: 90%;
+    @media ${device.laptop}{
+        width: 50%;
     }
 `;
 const TableTitle = styled.h3`
     text-align: center;
-    @media only screen and (max-width: 500px){
-        font-size: 14px;
+    font-size: 24px;
+    @media ${device.laptop}{
+        font-size: 16px;
     }
 `;
 const TableWrapper = styled.div`
     margin: 20px 0px;
+    ;
 `;
 const Center = styled.div`
-    width: 80%;
-    @media only screen and (max-width: 500px){
-        width: 100%;
-        
+    width: 100%;
+    @media ${device.laptop}{
+        width: 80%;
     }
 `;
 
@@ -67,10 +70,7 @@ const Image = styled.img`
 `;
 const Bottom = styled.div``;
 const BottomImage = styled.img`
-    @media only screen and (max-width: 500px){
-        width: 90%;
-        height: auto;
-    }
+    
 `;
 const LinkTo = styled.a`
     text-decoration: none;
@@ -78,7 +78,7 @@ const LinkTo = styled.a`
 const Button = styled.button`
     margin-top: 30px;
     padding: 15px 25px;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 600;
     background-color: #F5A425;
     color : white;
@@ -89,11 +89,9 @@ const Button = styled.button`
         cursor: pointer;
 
     }
-    @media only screen and (max-width: 500px){
-        width: 100%;
-        
+    @media ${device.laptop}{
+        font-size: 16px;
     }
-
 `;
 function createData(name, calories) {
     return { name, calories };
