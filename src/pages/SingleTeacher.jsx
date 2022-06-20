@@ -4,6 +4,7 @@ import styled from "styled-components"
 import AboveNav from '../components/AboveNav';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import { device } from '../device';
 
 
 const Container = styled.div`
@@ -12,47 +13,55 @@ const Container = styled.div`
 const Wrapper = styled.div`
     padding: 50px;
     width: 90%;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    @media only screen and (max-width:500px){
-        flex-direction: column;
-        height: auto;
+    align-items: center;
+    height: auto;
+    @media ${device.laptop}{
+        flex-direction: row;
+        align-items: unset;
     }
 `;
 
 const ImageContainer = styled.div`
     padding: 20px;
-    @media only screen and (max-width:500px){
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
 `;
 const Image = styled.img`
-    @media only screen and (max-width:500px){
-        width: 90%;
-    }
+    
 `;
 const InfoContainer = styled.div`
     padding:20px;
     display: flex;
     flex-direction: column;
-    @media only screen and (max-width:500px){
-        align-items: center;
-        text-align: center;
+    align-items: center;
+    text-align: center;
+    @media ${device.laptop}{
+        align-items: unset;
+        text-align: left;
     }
 `;
 const Name = styled.h4`
     margin: 10px 20px;
+    font-size: 30px;
+    width: 100%;
 `;
 const Profession = styled.h4`
     margin: 10px 20px;
+    font-size: 20px;
+    @media ${device.laptop}{
+        font-size: 16px;
+    }
 `;
 const Paragraph = styled.p`
     margin: 10px 20px;
     width: 80%;
+    font-size: 25px;
+    @media ${device.laptop}{
+        font-size: 16px;
+        font-weight: 400;
+    }
 `;
 const SingleTeacher = ({item}) => {
 

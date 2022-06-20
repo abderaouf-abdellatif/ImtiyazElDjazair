@@ -10,6 +10,7 @@ import Paper from '@mui/material/Paper';
 import teens from "../images/Teens.jpg"
 import juniors from '../images/juniors.jpg'
 import levelsJuniors from '../images/levelsJuniors.png'
+import { device } from '../device';
 const Container = styled.div`
     margin: 80px;
     color: #162239;
@@ -21,7 +22,8 @@ const Title = styled.h1`
     margin: 0px 0px 8px;
     color: #F5A425;
     margin-bottom: 20px;
-    @media only screen and (max-width: 500px){
+    font-size: 35px;
+    @media ${device.laptop}{
         font-size: 20px;
     }
 `;
@@ -32,21 +34,17 @@ const Wrapper = styled.div`
     align-items: center;
 `;
 const Top = styled.div`
-    width: 50%;
-    @media only screen and (max-width: 500px){
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    width: 70%;
+    @media ${device.laptop}{
+        width: 50%;
     }
 `;
 const SubTitle = styled.h2`
     text-align: center;
     margin: 0px 0px 24px;
-    @media only screen and (max-width: 500px){
-        font-size: 16px;
-        width: 90%;
-        
+    font-size: 30px;
+    @media ${device.laptop}{
+        font-size: 25px;
     }
 `;
 const TableWrapper = styled.div`
@@ -54,54 +52,60 @@ const TableWrapper = styled.div`
 `;
 
 const Center = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px 0px;
-    @media only screen and (max-width: 500px){
         width: 90%;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-    }
+        margin: 40px 0px;
+        @media ${device.laptop}{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     
 `;
 const Left = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media only screen and (max-width: 500px){
-        width: 90%;
-        
-    }
 `;
 const TitleTwo = styled.h3`
-    font-size: 22px;
     margin-bottom: 20px;
-    @media only screen and (max-width: 500px){
-        margin-top: 20px;
-        
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    @media ${device.laptop}{
+        font-size: 22px;
+
     }
+    
 `;
 const Image = styled.img`
-    width: 500px;
+    width: 700px;
     height: auto;
-    margin-bottom: 15px;
-    @media only screen and (max-width: 500px){
-        width: 400px;
-        
+    @media ${device.laptop}{
+        width: 500px;
+        height: auto;
+        margin-bottom: 15px;
     }
+    
 `;
 const Paragraph = styled.p`
-    width: 500px;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
-    @media only screen and (max-width: 500px){
-        width: 400px;
-        margin-bottom: 20px;
-}
+    margin: 20px 0px;
+    @media ${device.laptop}{
+        width: 500px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+    
 `;
 const Right = styled.div`
     display: flex;
@@ -110,18 +114,10 @@ const Right = styled.div`
 `;
 
 const Bottom = styled.div`
-     @media only screen and (max-width: 500px){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
+
 `;
 const BottomImage = styled.img`
-    @media only screen and (max-width: 500px){
-        width: 90%;
-        height: auto;
-    }
+    
 `;
 const LinkTo = styled.a`
     text-decoration: none;
@@ -129,7 +125,7 @@ const LinkTo = styled.a`
 const Button = styled.button`
     margin-top: 30px;
     padding: 15px 25px;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 600;
     background-color: #F5A425;
     color : white;
@@ -140,11 +136,9 @@ const Button = styled.button`
         cursor: pointer;
 
     }
-    @media only screen and (max-width: 500px){
-        width: 100%;
-        
+    @media ${device.laptop}{
+        font-size: 16px;
     }
-
 `;
 function createData(name, calories) {
     return { name, calories };

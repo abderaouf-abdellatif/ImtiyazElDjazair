@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { device } from '../device';
 import teacherone from '../images/teacherone.jpg'
 const Container = styled.div`
     display: flex;
@@ -21,31 +22,36 @@ const TitleContainer = styled.div`
     }
 `;
 const Title = styled.h2`
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 8px;
     padding: 15px 20px;
     border: 1px rgba(33, 37, 41,0.5) solid;
-    
+    @media ${device.laptop}{
+        font-size: 18px;
+
+    }
 `;
 const Wrapper = styled.div`
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
-    @media only screen and (max-width: 500px){
-        width: 90%;
-        flex-direction: column;
-        align-items: center;
+    @media ${device.laptop}{
+        flex-direction: row;
     }
+    
 `;
 const MeetParagraphs = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 50%;
-    @media only screen and (max-width: 500px){
-        width: 90%;
-        text-align: center;
+    width: 90%;
+    text-align: center;
+    @media ${device.laptop}{
+        width: 50%;
+        text-align: unset;
     }
 `;
 const Paragraph = styled.p`
@@ -62,10 +68,6 @@ const ImageContainer = styled.div`
     }
 `;
 const Image = styled.img`
- @media only screen and (max-width: 500px){
-        width: 90%;
-        
-}
 `;
 const MeetImtiyaz = () => {
     return (

@@ -32,8 +32,6 @@ const Wrapper = styled.div`
 const Front = styled.div`
     width: 400px;
     height: 265px;
-
-    
 `;
 const Image = styled.img`
     width: 100%;
