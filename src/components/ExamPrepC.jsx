@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ielts from '../images/ielts.jpg'
+import { device } from '../device';
 const Container = styled.div`
     margin: 80px;
     color: #162239;
@@ -10,25 +11,31 @@ const Container = styled.div`
     text-align: center;
 `;
 const Title = styled.h5`
-    font-size: 20PX;
+    font-size: 35px;
     margin: 0px 0px 15px;
     color: #F5A425;
+    @media ${device.laptop}{
+        font-size: 20px;
+    }
 `;
 const SubTitle = styled.h3`
     text-align: center;
     margin: 0px 0px 24px;
-    width: 50%;
-    @media only screen and (max-width: 500px){
-        width: 100%;
-        
+    width: 90%;
+    font-size: 25px;
+    @media ${device.laptop}{
+        width: 50%;
+        font-size: 16px;        
     }
 `;
 const Wrapper = styled.div`
     display: flex;
-    @media only screen and (max-width: 500px){
-        flex-direction: column;
-        align-items: center;
+    flex-direction: column;
+    @media ${device.laptop}{
+       display: flex;
+       flex-direction: row;
     }
+    
 `;
 
 const InfoWrapper = styled.div`
@@ -37,49 +44,48 @@ const InfoWrapper = styled.div`
     padding: 20px 40px;
     margin: 40px 0px;
     justify-content: space-around;
-    @media only screen and (max-width: 500px){
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-    }
+    
 `;
 const TitleWrapper = styled.div`
     display: flex;
     align-items: center;
-    @media only screen and (max-width: 500px){
+    justify-content: center;
+    margin-bottom: 25px;
+    @media ${device.laptop}{
         margin-bottom: 20px;
-        justify-content: center;
+        justify-content: left;
         
     }
 `;
 const InfoTitle = styled.h3`
     display: flex;
     align-items: center;
+    font-size: 30px;
+    @media ${device.laptop}{
+        font-size: 18px;
+    }
 `;
 const InfoText = styled.span`
     display: flex;
     align-items: center;
     margin-left: 15px;
+    font-size: 30px;
+    @media ${device.laptop}{
+        font-size: 18px;
+    }
 `;
 const InfoP = styled.p`
-     @media only screen and (max-width: 500px){
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-        
+    font-size: 25px;
+    margin-bottom: 15px;
+    @media ${device.laptop}{
+        font-size: 16px;
     }
 `;
 const ImageWrapper = styled.div`
-     @media only screen and (max-width: 500px){
-        width: 100%;
-        
-    }
+
 `;
 const Image = styled.img`
-     @media only screen and (max-width: 500px){
-        width: 100%;
-        
-    }
+    
 `;
 const ExamPrepC = () => {
     return (
