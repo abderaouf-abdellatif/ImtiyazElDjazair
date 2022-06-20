@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
 import emailjs from 'emailjs-com'
+import { device } from '../device';
 const Container = styled.div`
     margin: 80px;
     color: #162239;
@@ -9,28 +10,27 @@ const Container = styled.div`
     align-items: center;
 `;
 const Title = styled.h6`
-    font-size: 16px;
     margin: 0px 0px 8px;
     color: #F5A425;
+    font-size: 25px;
+    @media ${device.laptop}{
+        font-size: 16px;
+
+    }
 `;
 const SubTitle = styled.h1`
     font-size: 40px;
     text-align: center;
     margin: 0px 0px 24px;
-    @media only screen and (max-width: 500px){
-        width: 90%;
-        font-size: 30px;
-    }
    
 `;
 const Wrapper = styled.div`
-    width: 50%;
     padding: 50px;
     display: flex;
     justify-content: center;
-    @media only screen and (max-width: 500px){
-        width: 90%;
-        
+    width: 90%;
+    @media ${device.laptop}{
+        width: 50%;
     }
 `;
 const Form = styled.form`
@@ -41,34 +41,37 @@ const Form = styled.form`
     
 `;
 const WrapperTwo = styled.div`
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 10px;
-    @media only screen and (max-width: 500px){
-        width: 90%;
-        flex-direction:column ;
-
+    flex-direction:column ;
+    width: 90%;
+    @media ${device.laptop}{
+        width: 100%;
+        flex-direction: row;
     }
 `;
 const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    @media only screen and (max-width: 500px){
-        align-items: center;
-        
+    align-items: center;
+    @media ${device.laptop}{
+        align-items: unset;
     }
 `;
 const Label = styled.label`
     margin: 5px 0px;
     text-align: left;
     color: #162239;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 400;
+    @media ${device.laptop}{
+        font-size: 18px;
+
+    }
 `;
 const Input = styled.input`
-    width: 200px;
     height: 20px;
     padding: 1rem 0.75rem;
     margin-bottom: 5px;
@@ -77,21 +80,21 @@ const Input = styled.input`
     font-size: 1rem;
     font-weight: 400;
     transition: all 0.5s ease;
+    width: 300px;
     &:focus { 
         outline: none;
         border: 3px solid #F5A425;
 }
-    @media only screen and (max-width: 500px){
-        width: 100%;
-        
+    @media ${device.laptop}{
+        width: 200px;
     }
 `;
 const MessageContainer = styled.div`
     display: flex;
     flex-direction: column;
-    @media only screen and (max-width: 500px){
-        width: 80%;
-        align-items: center;
+    align-items: center;
+    @media ${device.laptop}{
+        align-items: unset;
     }
 
 `;
@@ -110,7 +113,7 @@ const Message = styled.textarea`
 const Button = styled.button`
     margin-top: 30px;
     padding: 15px 25px;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 600;
     background-color: #F5A425;
     color : white;
@@ -119,9 +122,12 @@ const Button = styled.button`
     letter-spacing: 1px;
     &:hover{
         cursor: pointer;
+        
+    }
+    @media ${device.laptop}{
+        font-size: 16px;
 
     }
-
 `;
 const Result = () =>{
     return(

@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { device } from '../device';
 import teachertwo from '../images/teachertwo.jpg'
 
 const Container = styled.div`
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: url(${(props) => props.imgUrl});
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,9 +13,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media only screen and (max-width: 500px){
-        height:auto;        
-    }
+    
 `;
 
 const TitleContainer = styled.div`
@@ -31,45 +30,42 @@ const TitleContainer = styled.div`
     }
 `;
 const Title = styled.h2`
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 8px;
     padding: 15px 20px;
     color: white;
     border: 1px rgba(255, 255, 255,0.8) solid;
+    @media ${device.laptop}{
+      font-size: 18px;
+
+    }
 `;
 const Wrapper = styled.div`
    padding: 10px;
-    display: flex;
+   display: flex;
+   flex-direction:column ;
     justify-content: space-between;
-    width: 70%;
-    @media only screen and (max-width: 500px){
-      width: 90%;
-      flex-direction:column ;
+    align-items: center;
+    width: 90%;
+    @media ${device.laptop}{
+      width: 70%;
+      flex-direction: row;
     }
 `;
 const ImageContainer = styled.div`
-   @media only screen and (max-width: 500px){
-      width: 90%;
-      display: flex;
-      align-items: center;
-      justify-content: center;  
-    }
+
 `;
 const Image = styled.img`
-   @media only screen and (max-width: 500px){
-        width: 90%;
-        
-    }
+
 `;
 const PragraphContainer = styled.div`
-      width: 50%;
       color: white;
       text-align: center;
       display: flex;
       align-items: center;
-      @media only screen and (max-width: 500px){
-        width: 90%;
-        
+      width: 90%;
+      @media ${device.laptop}{
+        width: 50%;  
     }
 `;
 const Paragraph = styled.p`
