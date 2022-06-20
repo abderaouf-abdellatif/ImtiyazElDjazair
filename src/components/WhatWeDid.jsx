@@ -115,7 +115,7 @@ const WhatWeDid = () => {
                     <One>
                         <Span></Span>
                         <Info>
-                            <Number>10k+</Number>
+                            <Number>200+</Number>
                             <Word>Students</Word>
                         </Info>
                     </One>
@@ -132,14 +132,14 @@ const WhatWeDid = () => {
                     <One>
                         <Span></Span>
                         <Info>
-                            <Number>50</Number>
-                            <Word>Teachers</Word>
+                            <Number>14</Number>
+                            <Word>Staff</Word>
                         </Info>
                     </One>
                     <Two>
                         <Span></Span>
                         <Info>
-                            <Number>150</Number>
+                            <Number>130+</Number>
                             <Word>Certifications</Word>
                         </Info>
                     </Two>

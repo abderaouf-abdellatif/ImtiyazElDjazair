@@ -7,8 +7,8 @@ const Container = styled.div`
     height: auto;
     background-color: #162239f2;
     display: flex;
-   flex-direction: column;
-   align-items: center;
+    flex-direction: column;
+    align-items: center;
     
 `;
 const Wrapper = styled.div`
@@ -17,11 +17,10 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     color: white;
-    height: 100px;
+    height: 80px;
     `;
 const Logo = styled.div`
     padding-left: 20px;
-    height: 80px;
     
     a{
         text-decoration: none;
@@ -130,7 +129,7 @@ const Navbar = ({ border }) => {
     return (
         <Container>
             <Wrapper>
-                <Logo><a href='/'><LogoText><span>Imtiyaz</span> Eldjazayir</LogoText></a></Logo>
+                <Logo><a href='/'><LogoText><span>IMTIYAZ</span> EL DJAZAIR</LogoText></a></Logo>
                 <Menu>
                     <MenuItem><MenuItemLink border={border === "home"} href='/'>HOME</MenuItemLink></MenuItem>
                     <MenuItem><MenuItemLink border={border === "teachers"} href='/Teachers'>TEACHERS</MenuItemLink></MenuItem>

@@ -11,11 +11,10 @@ import {device} from '../device'
 const Container = styled.div`
     display: none;
     @media ${device.laptop} { 
-        display: unset;
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        
     }
     
 `;
@@ -43,10 +42,9 @@ const WorkingTime = styled.div`
     }
 `;
 const SocialContainer = styled.div`
-    padding: 8.5px 48px;
+    padding: 8.5px 20px;
     display: flex;
  
-
 `;
 const Phone = styled.div`
     display: flex;
@@ -72,17 +70,17 @@ const AboveNav = () => {
             <InfoContainer>
                 <Address>
                     <LocationOnIcon style={{ color: "#F5A425", fontSize: "20px" }} />
-                    <span>123 Street, New York, USA</span>
+                    <span>Banque AL Baraka, USTO, Bir El Djir- Oran 31000</span>
                 </Address>
                 <WorkingTime>
                     <AccessTimeIcon style={{ color: "#F5A425", fontSize: "20px" }} />
-                    <span>Mon - Fri : 09.00 AM - 09.00 PM</span>
+                    <span>Sat - Wed : 09.00 AM - 08.00 PM | Thu - Fri : 09.00 AM - 05.00 PM</span>
                 </WorkingTime>
             </InfoContainer>
             <SocialContainer>
                 <Phone>
                     <PhoneIcon style={{ color: "#F5A425" }} />
-                    <span>+012 345 6789</span>
+                    <span>(+213) 0550 733 134 / 0561 670 805 / 0550 447 622</span>
                 </Phone>
                 
                 <a href="https://web.facebook.com/Imtiyaz-El-Djazair-105864575072264" target="_blank" rel="noreferrer">

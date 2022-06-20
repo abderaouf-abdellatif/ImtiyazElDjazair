@@ -14,8 +14,6 @@ import theysaytwo from "../src/images/theysaytwo.png"
 import theysaythree from "../src/images/theysaythree.png"
 import teacherone from "../src/images/teacherone.jpg"
 import teachertwo from "../src/images/teachertwo.jpg"
-import teacherthree from "../src/images/teacherthree.jpg"
-import teacherfour from "../src/images/teacherfour.jpg"
 import englishMaritime from "../src/images/english-maritime.jpg"
 import LegalEnglish from "../src/images/legal-english.jpg"
 import BusinessEnglish from "../src/images/business-english.jpg"
@@ -58,13 +56,13 @@ export const whyUsItems = [
     id: 2,
     img: categoryTwo,
     Title: "Great Teachers",
-    paragraph: "Imtiyaz ElDjazayir is one of the best languages schools in Algeria. We offer a broad range of courses that have been carefully designed to cater for all needs and objectives",
+    paragraph: "Our school allows you to learn with native teachers from English speaking countries",
   },
   {
     id: 3,
     img: categoryThree,
     Title: "Certification",
-    paragraph: "Imtiyaz ElDjazayir is one of the best languages schools in Algeria. We offer a broad range of courses that have been carefully designed to cater for all needs and objectives",
+    paragraph: "Choose from our wide range of English language courses, and let our friendly teachers guide.",
 
   },
 ];

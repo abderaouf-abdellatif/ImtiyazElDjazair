@@ -7,13 +7,11 @@ import {device} from '../device';
 const Container = styled.div`
     display: none;
     @media ${device.laptop} { 
-        display: unset;
+        display : flex;
         width : 100%;
         height : 90vh;
-        display : flex;
         position : relative;
         overflow: hidden;
-        display: none;
     }
     
 `;

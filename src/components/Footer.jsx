@@ -126,19 +126,19 @@ const Footer = () => {
                 <Title>Find Us</Title>
                 <Info>
                     <LocationOnIcon style={{ fontSize : "16px !important", color :"#F5A425" }}/>
-                    <span>123, New Yor - USA</span>
+                    <span>Banque AL Baraka, USTO, Bir El Djir - Oran 31000 </span>
                 </Info>
                 <Info>
                     <PhoneIcon style={{ fontSize : "16px !important", color :"#F5A425" }}/>
-                    <span>0674631664</span>
+                    <span>0550 733 134 - 0561 670 805</span>
                 </Info>
                 <Info>
                     <EmailIcon style={{ fontSize : "16px !important", color :"#F5A425" }}/>
-                    <span>example@gmail.com</span>
+                    <span>contact@imtiyazeldjazair.dz</span>
                 </Info>
                 <Info>
                     <AccessTimeIcon style={{ fontSize : "16px !important", color :"#F5A425" }}/>
-                    <span>Mon - Fri : 09.00 AM - 09.00 PM</span>
+                    <span>Sat - Wed : 09.00 AM - 08.00 PM <br /> Thu - Fri : 09.00 AM - 05.00 PM</span>
                 </Info>
             </InfoContainer>
             <LinksContainer>
