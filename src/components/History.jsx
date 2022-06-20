@@ -65,6 +65,8 @@ const PragraphContainer = styled.div`
       width: 50%;
       color: white;
       text-align: center;
+      display: flex;
+      align-items: center;
       @media only screen and (max-width: 500px){
         width: 90%;
         
@@ -86,9 +88,7 @@ const History = () => {
           <Image src={teachertwo} />
         </ImageContainer>
         <PragraphContainer>
-          <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia modi voluptatem amet quod maiores! Explicabo, porro, unde exercitationem numquam atque veniam aliquid, eligendi harum quibusdam autem aut corrupti magnam voluptatibus.</Paragraph>
-          <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia modi voluptatem amet quod maiores! Explicabo, porro, unde exercitationem numquam atque veniam aliquid, eligendi harum quibusdam autem aut corrupti magnam voluptatibus.</Paragraph>
-          <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia modi voluptatem amet quod maiores! Explicabo, porro, unde exercitationem numquam atque veniam aliquid, eligendi harum quibusdam autem aut corrupti magnam voluptatibus.</Paragraph>
+          <Paragraph> Ever since its conception IMTIYAZ EL DJAZAIR strived to deliver an excellent and fun learning experience with native teachers. Which brought in an overwhelming positive feedback from the students who came to view the school as their home</Paragraph>
         </PragraphContainer>
       </Wrapper>
     </Container>

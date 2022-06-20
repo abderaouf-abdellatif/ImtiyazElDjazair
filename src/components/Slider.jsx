@@ -82,7 +82,7 @@ const Title = styled.h1`
     color:white;
     margin:30px 0px;
     span{
-        color:#F5A425;
+        color:#ef9700;
     }
 `;
 
@@ -94,15 +94,15 @@ const Button = styled.button`
     font-size: 20px;
     font-weight: 600;
     background-color:transparent ;
-    color : #F5A425;
-    border: 3px #F5A425 solid;
+    color : #ef9700;
+    border: 3px #ef9700 solid;
 
     &:hover{
         cursor: pointer;
         background-color:transparent ;
-        background-color: #F5A425;
+        background-color: #ef9700;
         color: white;
-        border: 3px #F5A425 solid;
+        border: 3px #ef9700 solid;
 
     }
 `;

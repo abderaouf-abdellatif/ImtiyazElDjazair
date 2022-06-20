@@ -125,16 +125,16 @@ export const TeachersItems = [
   {
     id:1,
     img: teacherone,
-    name : "Teacher Name 1",
+    name : "Amanda Amarotico",
     profession : "Teacher",
-    AboutMe : "Ross is from Scotland and started teaching English in Poland, 2007. It was an accident that he started in Poland: he’d thought it would be China but life is unpredictable. Since then he’s taught English in many countries in Europe and Asia (including China) and on the journey has discovered many things and met many wonderful and interesting people, many of them students, which is one of the reasons he loves teaching. He loves communication and how teaching is about helping others to communicate while enjoying it himself. He also likes nature, cats, photography, music and science."
+    AboutMe : "Coming from Pennsylvania,. Amanda acquired her experience throughout the years by teaching English across the world. She is well liked by students & known for her chill teaching methods."
   },
   {
     id:2,
     img: teachertwo,
-    name : "Teacher Name 2",
+    name : "Miriam Sahler",
     profession : "Teacher",
-    AboutMe : "Ross is from Scotland and started teaching English in Poland, 2007. It was an accident that he started in Poland: he’d thought it would be China but life is unpredictable. Since then he’s taught English in many countries in Europe and Asia (including China) and on the journey has discovered many things and met many wonderful and interesting people, many of them students, which is one of the reasons he loves teaching. He loves communication and how teaching is about helping others to communicate while enjoying it himself. He also likes nature, cats, photography, music and science."
+    AboutMe : "Born & raised in New York. Miriam or Mimi as she likes to be called has been with us since the start of the school. She teaches both adult & junior classes, the latter which she has years of experience in. "
   },
   
 ]

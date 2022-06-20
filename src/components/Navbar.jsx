@@ -38,7 +38,7 @@ const LogoText = styled.a`
     font-weight: bold;
     color:white;
     span{
-        color:#F5A425;
+        color: #ef9700;
     }
     @media ${device.laptop} { 
         font-size: 36px;
@@ -76,11 +76,11 @@ const MenuItemLink = styled.a`
     transition: all 0.3s ease;
     display: block;
     
-    border: ${props => props.border === true ? "2px #F5A425 solid" : "2px transparent solid"};
+    border: ${props => props.border === true ? "2px #ef9700 solid" : "2px transparent solid"};
     border-radius: 5px;
     cursor: pointer;
     &:hover{
-        border: 2px #F5A425 solid;
+        border: 2px #ef9700 solid;
         border-radius: 5px;
         cursor: pointer;
     }
