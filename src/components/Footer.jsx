@@ -10,7 +10,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import { device } from '../device';
 const Container = styled.div`
     height: 40vh;
-    background-color: #162239;
+    background-color: #0d1523;
     color: white;
     display: flex;
     padding: 0px 20px;
