@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
 import { device } from '../device';
+import id from "../images/logo.png";
 const Container = styled.div`
     width: 100%;
     height: auto;
-    background-color: #162239f2;
+    background-color: #0d1523;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +22,9 @@ const Wrapper = styled.div`
     `;
 const Logo = styled.div`
     padding-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 80px;
     
     a{
         text-decoration: none;
@@ -37,8 +41,10 @@ const LogoText = styled.a`
     letter-spacing: 1px;
     font-weight: bold;
     color:white;
+    height: 80px;
+    display: none;
     span{
-        color: #ef9700;
+        color: #efad3B;
     }
     @media ${device.laptop} { 
         font-size: 36px;
@@ -46,7 +52,11 @@ const LogoText = styled.a`
     }
 
 `;
-
+const Image = styled.img`
+    height: 120px;
+    width: 300px;
+    padding-left: 40px;
+`;
 const Menu = styled.ul`
     display: none;
     @media ${device.laptop} { 
@@ -76,11 +86,11 @@ const MenuItemLink = styled.a`
     transition: all 0.3s ease;
     display: block;
     
-    border: ${props => props.border === true ? "2px #ef9700 solid" : "2px transparent solid"};
+    border: ${props => props.border === true ? "2px #f8ca00 solid" : "2px transparent solid"};
     border-radius: 5px;
     cursor: pointer;
     &:hover{
-        border: 2px #ef9700 solid;
+        border: 2px #f8ca00 solid;
         border-radius: 5px;
         cursor: pointer;
     }
@@ -129,7 +139,7 @@ const Navbar = ({ border }) => {
     return (
         <Container>
             <Wrapper>
-                <Logo><a href='/'><LogoText><span>IMTIYAZ</span> EL DJAZAIR</LogoText></a></Logo>
+                <Logo><Image src={id} alt="" /><a href='/'><LogoText><span>IMTIYAZ</span> EL DJAZAIR</LogoText></a></Logo>
                 <Menu>
                     <MenuItem><MenuItemLink border={border === "home"} href='/'>HOME</MenuItemLink></MenuItem>
                     <MenuItem><MenuItemLink border={border === "teachers"} href='/Teachers'>TEACHERS</MenuItemLink></MenuItem>

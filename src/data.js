@@ -1,6 +1,6 @@
-import photo1bleu85 from '../src/images/photo1bleu85.png'
-import photo2bleu85 from '../src/images/photo2bleu85.png'
-import photo3bleu85 from '../src/images/photo3bleu85.png'
+import sliderone from '../src/images/sliderone.png'
+import slidertwo from '../src/images/slidertwo.png'
+import sliderthree from '../src/images/sliderthree.png'
 import categoryOne from '../src/images/education.png'
 import categoryTwo from '../src/images/teacher.png'
 import categoryThree from '../src/images/certifcat.png'
@@ -23,21 +23,21 @@ import MedicalEnglish from "../src/images/medical-english.jpg"
 export const sliderItems = [
   {
     id: 1,
-    img: photo1bleu85,
+    img: sliderone,
     smallTitle: "IMTIYAZ ELDJAZAIR SCHOOL OF ENGLISH",
     span: "Best ",
     title: "Place To Learn",
   },
   {
     id: 2,
-    img: photo2bleu85,
+    img: slidertwo,
     smallTitle: "IMTIYAZ ELDJAZAIR SCHOOL OF ENGLISH",
     span: "Best ",
     title: "Experienced Teachers",
   },
   {
     id: 3,
-    img: photo3bleu85,
+    img: sliderthree,
     smallTitle: "IMTIYAZ ELDJAZAIR SCHOOL OF ENGLISH",
     span: "Best ",
     title: "Program Ever",

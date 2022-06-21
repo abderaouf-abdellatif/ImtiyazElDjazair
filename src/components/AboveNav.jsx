@@ -14,7 +14,7 @@ const Container = styled.div`
         width: 100%;
         display: flex;
         align-items: center;
-        
+        justify-content: space-around;
     }
     
 `;
@@ -60,7 +60,7 @@ const Phone = styled.div`
 `;
 const useStyles = makeStyles(theme => ({
     customHoverFocus: {
-      "&:hover, &.Mui-focusVisible": { color: "#ce8a1d !important" }
+      "&:hover, &.Mui-focusVisible": { color: "#865d1a !important" }
     }
   }));
 const AboveNav = () => {
@@ -69,25 +69,25 @@ const AboveNav = () => {
         <Container>
             <InfoContainer>
                 <Address>
-                    <LocationOnIcon style={{ color: "#ef9700", fontSize: "20px" }} />
+                    <LocationOnIcon style={{ color: "#f8ca00", fontSize: "20px" }} />
                     <span>Banque AL Baraka, USTO, Bir El Djir- Oran </span>
                 </Address>
                 <WorkingTime>
-                    <AccessTimeIcon style={{ color: "#ef9700", fontSize: "20px" }} />
+                    <AccessTimeIcon style={{ color: "#f8ca00", fontSize: "20px" }} />
                     <span>Sat - Wed : 09.00 AM - 08.00 PM | Thu - Fri : 09.00 AM - 05.00 PM</span>
                 </WorkingTime>
             </InfoContainer>
             <SocialContainer>
                 <Phone>
-                    <PhoneIcon style={{ color: "#ef9700" }} />
+                    <PhoneIcon style={{ color: "#f8ca00" }} />
                     <span>(+213) 0550 733 134 / 0561 670 805 / 0550 447 622</span>
                 </Phone>
                 
                 <a href="https://web.facebook.com/Imtiyaz-El-Djazair-105864575072264" target="_blank" rel="noreferrer">
-                <FacebookIcon className={classes.customHoverFocus} style={{ color: "#ef9700", marginLeft: "10px", cursor: "pointer" }}  />
+                <FacebookIcon className={classes.customHoverFocus} style={{ color: "#f8ca00", marginLeft: "10px", cursor: "pointer" }}  />
                 </a>
                 <a href="https://www.instagram.com/imtiyaz_el_djazair_officiel" target="_blank" rel="noreferrer">
-                <InstagramIcon className={classes.customHoverFocus} style={{ color: "#ef9700", marginLeft: "10px", cursor: "pointer" }} />
+                <InstagramIcon className={classes.customHoverFocus} style={{ color: "#f8ca00", marginLeft: "10px", cursor: "pointer" }} />
                 </a>
         </SocialContainer>
         </Container >

@@ -23,7 +23,7 @@ const Circle = styled.div`
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #F5A425;
+  background-color: # ;
   opacity: 0.65;
   position: absolute;
   top: 80vh;

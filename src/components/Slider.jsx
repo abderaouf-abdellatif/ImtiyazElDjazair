@@ -19,7 +19,7 @@ const Arrow = styled.div`
     width : 60px;
     height : 60px;
     border-radius : 50%;
-    background-color: rgba(245, 164, 37,0.8);
+    background-color: #f8ca00;
     display : flex;
     justify-content : center;
     align-items : center;
@@ -82,7 +82,7 @@ const Title = styled.h1`
     color:white;
     margin:30px 0px;
     span{
-        color:#ef9700;
+        color:#f8ca00;
     }
 `;
 
@@ -94,15 +94,15 @@ const Button = styled.button`
     font-size: 20px;
     font-weight: 600;
     background-color:transparent ;
-    color : #ef9700;
-    border: 3px #ef9700 solid;
+    color : #f8ca00;
+    border: 3px #f8ca00 solid;
 
     &:hover{
         cursor: pointer;
         background-color:transparent ;
-        background-color: #ef9700;
+        background-color: #f8ca00;
         color: white;
-        border: 3px #ef9700 solid;
+        border: 3px #f8ca00 solid;
 
     }
 `;
