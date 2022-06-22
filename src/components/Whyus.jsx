@@ -16,9 +16,9 @@ const Container = styled.div`
     position: relative;
 `;
 const TitleContainer = styled.div`
+    width: 80%;
     padding: 0px 15px;
     margin: 0px 0px 70px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,12 +31,12 @@ const TitleContainer = styled.div`
     
 `;
 const Title = styled.h2` 
-    font-size: 35px;
-    padding: 15px 20px;
-    margin-bottom: 8px;
-    border: 1px rgba(33, 37, 41,0.5) solid;
+    font-size: 35px;    
     @media ${device.laptop} { 
         font-size: 18px;
+        margin-bottom: 8px;
+        padding: 15px 20px;
+        border: 1px rgba(33, 37, 41,0.5) solid;
     }
     
 `;
@@ -106,7 +106,7 @@ const CategorieTitle = styled.h5`
     margin-bottom: 15px;
     padding: 0px 5px;
     z-index: 1;
-    color: #f8ca00 ;
+    color: #F5A425 ;
     @media ${device.laptop}{
         font-size: 13px;
         margin: 10px 0px;

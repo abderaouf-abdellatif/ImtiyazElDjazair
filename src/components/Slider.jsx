@@ -9,7 +9,7 @@ const Container = styled.div`
     @media ${device.laptop} { 
         display : flex;
         width : 100%;
-        height : 90vh;
+        height : 100vh;
         position : relative;
         overflow: hidden;
     }
@@ -19,7 +19,7 @@ const Arrow = styled.div`
     width : 60px;
     height : 60px;
     border-radius : 50%;
-    background-color: #f8ca00;
+    background-color: rgba(245, 164, 37,0.8);
     display : flex;
     justify-content : center;
     align-items : center;
@@ -49,16 +49,17 @@ const Wrapper = styled.div`
 
 `;
 const Slide = styled.div`
-    height : 100vh;
     width : 100vw;
+    height : 100vh;
     text-align: center;
     align-items : center;
+    background-color: #${props => props.bg};
     position: relative;
-`;
+    `;
 
 
 const Image = styled.img`
-    height : 90%;
+    height : auto;
     width: 100%;
 `;
 const InfoContainer = styled.div`
@@ -101,7 +102,7 @@ const Button = styled.button`
         background-color:transparent ;
         background-color: #f8ca00;
         color: white;
-        border: 3px #f8ca00 solid;
+        border: 3px #efad3B solid;
 
     }
 `;
@@ -125,7 +126,7 @@ const Slider = () => {
             </Arrow>
             <Wrapper slideIndex={slideIndex}>
                 {sliderItems.map((item, index) => (
-                    <Slide  key={index}>
+                    <Slide bg={item.bg} key={index}>
                         <Image src={item.img} />
 
                         <InfoContainer>
