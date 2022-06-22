@@ -10,6 +10,7 @@ import WhatWeDo from '../components/WhatWeDo'
 import WhereWeAre from '../components/WhereWeAre'
 import Whyus from '../components/Whyus'
 import ScrollToTop from "react-scroll-to-top";
+import SliderM from '../components/SliderM'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <AboveNav />
       <Navbar border={"home"} />
       <Slider />
+      <SliderM />
       <Whyus />
       <WhatWeDid />
       <WhatWeDo />
