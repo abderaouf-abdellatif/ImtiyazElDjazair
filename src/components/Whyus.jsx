@@ -18,6 +18,7 @@ const Container = styled.div`
 const TitleContainer = styled.div`
     padding: 0px 15px;
     margin: 0px 0px 70px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +106,7 @@ const CategorieTitle = styled.h5`
     margin-bottom: 15px;
     padding: 0px 5px;
     z-index: 1;
-    color: #F5A425 ;
+    color: #efad3B ;
     @media ${device.laptop}{
         font-size: 13px;
         margin: 10px 0px;

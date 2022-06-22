@@ -19,7 +19,7 @@ const Container = styled.div`
 `;
 const Title = styled.h6`
     margin: 0px 0px 8px;
-    color: #F5A425;
+    color: #efad3B;
     font-size: 24px;
     @media ${device.laptop}{
         font-size: 16px;
@@ -80,9 +80,9 @@ const Button = styled.button`
     padding: 15px 25px;
     font-size: 25px;
     font-weight: 600;
-    background-color: #F5A425;
+    background-color: #efad3B;
     color : white;
-    border: 3px #F5A425 solid;
+    border: 3px #efad3B solid;
     border-radius: 10px;
     letter-spacing: 1px;
     &:hover{

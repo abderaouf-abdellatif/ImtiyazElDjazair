@@ -12,7 +12,7 @@ const Container = styled.div`
 const Title = styled.h6`
     font-size: 16px;
     margin: 0px 0px 8px;
-    color: #F5A425;
+    color: #efad3B;
 `;
 const SubTitle = styled.h1`
     font-size: 40px;

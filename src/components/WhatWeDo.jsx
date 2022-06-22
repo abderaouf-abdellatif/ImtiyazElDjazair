@@ -68,7 +68,7 @@ const InfoParagraph = styled.div`
     span{
         width: 30%;
         height: 3px;
-        background-color: #F5A425;
+        background-color: #efad3B;
         display: inherit;
         margin: 10px;
         
@@ -164,15 +164,15 @@ const WhatWeDo = () => {
                 </InfoParagraph>
                 <InfoHighlights>
                     <Highlight>
-                        <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#F5A425", fontSize: "30px" }} />
+                        <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#efad3B", fontSize: "30px" }} />
                         High-quality activity programme
                     </Highlight>
                     <Highlight>
-                        <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#F5A425", fontSize: "30px" }} />
+                        <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#efad3B", fontSize: "30px" }} />
                         Explore in safety and comfort
                     </Highlight>
                     <Highlight>
-                        <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#F5A425", fontSize: "30px" }} />
+                        <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#efad3B", fontSize: "30px" }} />
                         Available 7 days a week
                     </Highlight>
                 </InfoHighlights>
