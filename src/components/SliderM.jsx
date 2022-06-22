@@ -39,7 +39,7 @@ const Title = styled.h1`
 const SliderM = () => {
     return (
         <Container>
-            <Carousel showArrows={false} autoPlay infiniteLoop interval={4000}>
+            <Carousel style={{ "margin" : "0 !important", "padding" : "0 !important" }} showArrows={false} autoPlay infiniteLoop interval={4000}>
                 <Wrapper>
                     <Image src={sliderItems[0].img} />
                     <InfoContainer>

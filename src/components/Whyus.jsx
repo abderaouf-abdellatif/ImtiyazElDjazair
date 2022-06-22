@@ -30,26 +30,16 @@ const TitleContainer = styled.div`
     
 `;
 const Title = styled.h2` 
-    display: none;
+    font-size: 35px;
+    padding: 15px 20px;
+    margin-bottom: 8px;
+    border: 1px rgba(33, 37, 41,0.5) solid;
     @media ${device.laptop} { 
-        display: unset;
         font-size: 18px;
-        margin-bottom: 8px;
-        padding: 15px 20px;
-        border: 1px rgba(33, 37, 41,0.5) solid;
     }
     
 `;
-const TitleTwo = styled.h2`
-    font-size: 35px;
-    letter-spacing: 0.2rem;
-    margin-bottom: 8px;
-    padding: 15px 20px;
-    border: 1px rgba(33, 37, 41,0.5) solid;
-    @media ${device.laptop} { 
-        display: none;
-    }
-`;
+
 const InfoContainer = styled.div`
     display: none;
     
@@ -174,12 +164,6 @@ const InfoContainerRes = styled.div`
         display: none;
     }
 `;
-const InfoContainerResTitle = styled.h3`
-    width: 80%;
-    text-align: center;
-    margin: 15px 0px;
-    font-size: 28px;
-`;
 const CategorieRes = styled.div`
     
     text-align: center;
@@ -197,7 +181,6 @@ const Whyus = () => {
             <TitleContainer>
                 <span></span>
                 <Title>Why Choose Imtiyaz ElDjazayir?</Title>
-                <TitleTwo>Who We Are</TitleTwo>
             </TitleContainer>
             <InfoContainer>
                 <InfoCategorie>
@@ -224,12 +207,6 @@ const Whyus = () => {
                 </InfoDescription>
             </InfoContainer>
             <InfoContainerRes>
-                <InfoContainerResTitle>
-                    Imtiyaz El Djazair it the best English School ever!
-                </InfoContainerResTitle>
-                <InfoContainerResTitle>
-                    Why Choose Us?
-                </InfoContainerResTitle>
                 <CategorieRes>
                     <CategorieTitle>BEST EDCUATION </CategorieTitle>
                     <DescriptionParagraph>
