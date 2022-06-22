@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const Arrow = styled.div`
     border-radius : 50%;
-    background-color: #efad3B;
+    background-color: #f8ca00;
     color:white;
     display : flex;
     justify-content : center;
@@ -77,7 +77,7 @@ const Title = styled.h2`
 const InfoTitle = styled.h1`
     font-size: 45px;
     margin: 0px 0px 24px;
-    color: #efad3B;
+    color: #f8ca00;
     @media ${device.laptop}{
         font-size: 40px;
     }

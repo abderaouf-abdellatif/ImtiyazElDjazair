@@ -66,7 +66,7 @@ const One = styled.div`
 const Span = styled.span`
     height: 100px;
     width: 2px;
-    background-color: #efad3B;
+    background-color: #f8ca00;
     margin-right: 10px;
     @media ${device.laptop} { 
         height: 200px;

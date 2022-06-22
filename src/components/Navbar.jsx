@@ -35,23 +35,6 @@ const Logo = styled.div`
     }
     
 `;
-const LogoText = styled.a`
-    font-size: 36px;
-    margin-left: 40px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    color:white;
-    height: 80px;
-    display: none;
-    span{
-        color: #efad3B;
-    }
-    @media ${device.laptop} { 
-        font-size: 36px;
-        margin-left: 20px;
-    }
-
-`;
 const Image = styled.img`
     height: 120px;
     width: 300px;
@@ -139,7 +122,7 @@ const Navbar = ({ border }) => {
     return (
         <Container>
             <Wrapper>
-                <Logo><Image src={id} alt="" /><a href='/'><LogoText><span>IMTIYAZ</span> EL DJAZAIR</LogoText></a></Logo>
+                <Logo><a href='/'><Image src={id} alt="" /></a></Logo>
                 <Menu>
                     <MenuItem><MenuItemLink border={border === "home"} href='/'>HOME</MenuItemLink></MenuItem>
                     <MenuItem><MenuItemLink border={border === "teachers"} href='/Teachers'>TEACHERS</MenuItemLink></MenuItem>

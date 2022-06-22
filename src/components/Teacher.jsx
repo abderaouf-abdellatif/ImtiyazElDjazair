@@ -31,8 +31,8 @@ const Container = styled.div`
     }
     &:hover{
         margin: 0;
-        border: 0.75rem #efad3B solid;
-        border-bottom: 0.75rem #efad3B solid;
+        border: 0.75rem #f8ca00 solid;
+        border-bottom: 0.75rem #f8ca00 solid;
     }
 `;
 const Image = styled.img`
@@ -44,13 +44,13 @@ const Image = styled.img`
 `;
 const ToPage = styled.a`
     text-decoration: none;
-    color: #efad3B;
+    color: #f8ca00;
 `;
 
 const Button = styled.button`
-    color: #efad3B;
+    color: #f8ca00;
     background-color: transparent;
-    border: 3px #efad3B solid;
+    border: 3px #f8ca00 solid;
     padding: 7px 15px;
     font-size: 20px;
     font-weight: 500;
@@ -60,7 +60,7 @@ const Button = styled.button`
         color: white;
     }
     &:hover{
-        background-color: #efad3B;
+        background-color: #f8ca00;
         color: white;
         cursor: pointer;
     }

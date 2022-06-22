@@ -82,7 +82,7 @@ const LinkTo = styled.a`
     transition: all 0.5s ease;
     &:hover{
         letter-spacing: 2px;
-        color: #efad3B;
+        color: #f8ca00;
     }
 `;
 const ContactContainer = styled.div`
@@ -99,12 +99,12 @@ const ContactButton = styled.button`
     font-size: 30px;
     font-weight: 600;
     background-color:transparent ;
-    color : #efad3B;
-    border: 3px #efad3B solid;
+    color : #f8ca00;
+    border: 3px #f8ca00 solid;
     &:hover{
         cursor: pointer;
         background-color:transparent ;
-        background-color: #efad3B;
+        background-color: #f8ca00;
         color: white;
         
     }
@@ -124,19 +124,19 @@ const Footer = () => {
             <InfoContainer>
                 <Title>Find Us</Title>
                 <Info>
-                    <LocationOnIcon style={{ fontSize : "16px !important", color :"#efad3B" }}/>
+                    <LocationOnIcon style={{ fontSize : "16px !important", color :"#f8ca00" }}/>
                     <span>Banque AL Baraka, USTO, Bir El Djir - Oran </span>
                 </Info>
                 <Info>
-                    <PhoneIcon style={{ fontSize : "16px !important", color :"#efad3B" }}/>
+                    <PhoneIcon style={{ fontSize : "16px !important", color :"#f8ca00" }}/>
                     <span>0550 733 134 - 0561 670 805</span>
                 </Info>
                 <Info>
-                    <EmailIcon style={{ fontSize : "16px !important", color :"#efad3B" }}/>
+                    <EmailIcon style={{ fontSize : "16px !important", color :"#f8ca00" }}/>
                     <span>contact@imtiyazeldjazair.dz</span>
                 </Info>
                 <Info>
-                    <AccessTimeIcon style={{ fontSize : "16px !important", color :"#efad3B" }}/>
+                    <AccessTimeIcon style={{ fontSize : "16px !important", color :"#f8ca00" }}/>
                     <span>Sat - Wed : 09.00 AM - 08.00 PM <br /> Thu - Fri : 09.00 AM - 05.00 PM</span>
                 </Info>
             </InfoContainer>

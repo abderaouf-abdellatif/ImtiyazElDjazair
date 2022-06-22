@@ -20,7 +20,7 @@ const Container = styled.div`
 `;
 const Title = styled.h1`
     margin: 0px 0px 8px;
-    color: #efad3B;
+    color: #f8ca00;
     margin-bottom: 20px;
     font-size: 35px;
     @media ${device.laptop}{
@@ -127,7 +127,7 @@ const Button = styled.button`
     padding: 15px 25px;
     font-size: 30px;
     font-weight: 600;
-    background-color: #efad3B;
+    background-color: #f8ca00;
     color : white;
     border: 3px #efad3B solid;
     border-radius: 10px;

@@ -11,7 +11,7 @@ const Container = styled.div`
 `;
 const Title = styled.h6`
     margin: 0px 0px 8px;
-    color: #efad3B;
+    color: #f8ca00;
     font-size: 30px;
     @media ${device.laptop}{
         font-size: 16px;
@@ -83,7 +83,7 @@ const Input = styled.input`
     width: 300px;
     &:focus { 
         outline: none;
-        border: 3px solid #efad3B;
+        border: 3px solid #f8ca00;
 }
     @media ${device.laptop}{
         width: 200px;
@@ -107,7 +107,7 @@ const Message = styled.textarea`
     transition: all 0.5s ease;
      &:focus { 
         outline: none;
-        border: 3px solid #efad3B;
+        border: 3px solid #f8ca00;
 }
 `;
 const Button = styled.button`
@@ -115,9 +115,9 @@ const Button = styled.button`
     padding: 15px 25px;
     font-size: 25px;
     font-weight: 600;
-    background-color: #efad3B;
+    background-color: #f8ca00;
     color : white;
-    border: 3px #efad3B solid;
+    border: 3px #f8ca00 solid;
     border-radius: 10px;
     letter-spacing: 1px;
     &:hover{

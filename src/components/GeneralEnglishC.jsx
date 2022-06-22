@@ -80,9 +80,9 @@ const Button = styled.button`
     padding: 15px 25px;
     font-size: 25px;
     font-weight: 600;
-    background-color: #efad3B;
+    background-color: #f8ca00;
     color : white;
-    border: 3px #efad3B solid;
+    border: 3px #f8ca00 solid;
     border-radius: 10px;
     letter-spacing: 1px;
     &:hover{

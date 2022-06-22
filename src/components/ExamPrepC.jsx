@@ -13,7 +13,7 @@ const Container = styled.div`
 const Title = styled.h5`
     font-size: 35px;
     margin: 0px 0px 15px;
-    color: #F5A425;
+    color: #f8ca00;
     @media ${device.laptop}{
         font-size: 20px;
     }

@@ -106,7 +106,7 @@ const CategorieTitle = styled.h5`
     margin-bottom: 15px;
     padding: 0px 5px;
     z-index: 1;
-    color: #efad3B ;
+    color: #f8ca00 ;
     @media ${device.laptop}{
         font-size: 13px;
         margin: 10px 0px;
