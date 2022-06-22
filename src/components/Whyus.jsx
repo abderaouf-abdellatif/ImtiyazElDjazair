@@ -32,11 +32,11 @@ const TitleContainer = styled.div`
 `;
 const Title = styled.h2` 
     font-size: 35px;    
+    padding: 15px 20px;
+    border: 1px rgba(33, 37, 41,0.5) solid;
     @media ${device.laptop} { 
         font-size: 18px;
         margin-bottom: 8px;
-        padding: 15px 20px;
-        border: 1px rgba(33, 37, 41,0.5) solid;
     }
     
 `;
@@ -106,7 +106,7 @@ const CategorieTitle = styled.h5`
     margin-bottom: 15px;
     padding: 0px 5px;
     z-index: 1;
-    color: #F5A425 ;
+    color: #f8ca00 ;
     @media ${device.laptop}{
         font-size: 13px;
         margin: 10px 0px;
