@@ -50,6 +50,7 @@ const WrapperTwo = styled.div`
     @media ${device.laptop}{
         width: 100%;
         flex-direction: row;
+        justify-content: space-between;
     }
 `;
 const InfoContainer = styled.div`
@@ -169,7 +170,7 @@ const ContactUs = () => {
                         </InfoContainer>
                         <MessageContainer>
                             <Label>Your message</Label>
-                            <Message cols="40" rows="11" name='message' required></Message>
+                            <Message cols="38" rows="10" name='message' required></Message>
                         </MessageContainer>
                     </WrapperTwo>
                     <div> { result ? <Result /> : null} </div>

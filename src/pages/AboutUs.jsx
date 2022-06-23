@@ -1,4 +1,5 @@
 import React from 'react'
+import AboveNav from '../components/AboveNav';
 import Navbar from '../components/Navbar'
 import styled from 'styled-components'
 import MeetImtiyaz from '../components/MeetImtiyaz';
@@ -14,6 +15,7 @@ const AboutUs = () => {
   return (
     <Container>
       <ScrollToTop smooth top="700" />
+      <AboveNav />
       <Navbar border={"about"} />
       <MeetImtiyaz />
       <History />
