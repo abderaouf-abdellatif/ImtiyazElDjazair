@@ -89,7 +89,7 @@ const Highlight = styled.div`
     margin: 10px 0px;
     display: flex;
     align-items: center;
-    font-size: 35px;
+    font-size: 38px;
     margin-bottom: 15px;
     @media ${device.laptop} { 
         font-size: 20px ;
@@ -168,15 +168,15 @@ const WhatWeDo = () => {
                     <span align={"right"}></span>
                 </InfoParagraph>
                 <InfoHighlights>
-                    <Highlight data-aos="fade-left" data-aos-duration="3000">
+                    <Highlight data-aos="fade-left" data-aos-duration="2000">
                         <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#f8ca00", fontSize: "30px" }} />
                         High-quality activity programme
                     </Highlight>
-                    <Highlight data-aos="fade-left" data-aos-duration="3000">
+                    <Highlight data-aos="fade-left" data-aos-duration="2000">
                         <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#f8ca00", fontSize: "30px" }} />
                         Explore in safety and comfort
                     </Highlight>
-                    <Highlight data-aos="fade-left" data-aos-duration="3000">
+                    <Highlight data-aos="fade-left" data-aos-duration="2000">
                         <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#f8ca00", fontSize: "30px" }} />
                         Available 7 days a week
                     </Highlight>

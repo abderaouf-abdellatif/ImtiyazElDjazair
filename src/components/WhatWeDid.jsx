@@ -82,16 +82,22 @@ const Info = styled.div`
     justify-content: center;
 `;
 const Number = styled.h4`
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 700;
     line-height: 0.9em;
     margin-left: 10px;
+    @media ${device.laptop} { 
+        font-size: 5vw;
+    }
 `;
 const Word = styled.h5`
-    font-size: 2vw;
+    font-size: 4vw;
     font-weight: 500;
     margin-left: 10px;
     margin-top: 5px;
+    @media ${device.laptop} { 
+        font-size: 2vw;
+    }
 `;
 const Two = styled.div`
     display: flex;
