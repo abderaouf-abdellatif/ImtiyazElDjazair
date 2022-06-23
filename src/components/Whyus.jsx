@@ -213,19 +213,19 @@ const Whyus = () => {
                 </InfoDescription>
             </InfoContainer>
             <InfoContainerRes>
-                <CategorieRes>
+                <CategorieRes data-aos="fade-left" data-aos-duration="4000">
                     <CategorieTitle>BEST EDCUATION </CategorieTitle>
                     <DescriptionParagraph>
                             {whyUsItems[0].paragraph}
                         </DescriptionParagraph>
                 </CategorieRes>
-                <CategorieRes>
+                <CategorieRes data-aos="fade-left" data-aos-duration="4000" >
                     <CategorieTitle>GREAT TEACHERS</CategorieTitle>
                     <DescriptionParagraph>
                             {whyUsItems[1].paragraph}
                         </DescriptionParagraph>
                 </CategorieRes>
-                <CategorieRes>
+                <CategorieRes data-aos="fade-left" data-aos-duration="4000">
                     <CategorieTitle>CERTIFICATION</CategorieTitle>
                     <DescriptionParagraph>
                             {whyUsItems[2].paragraph}
