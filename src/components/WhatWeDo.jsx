@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { framesItems } from '../../src/data';
 import { device } from '../device';
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Container = styled.div`
     color: #212529;
     height: auto;
@@ -147,6 +149,9 @@ const ImageTitle = styled.h5`
     }
 `;
 const WhatWeDo = () => {
+    useEffect(()=>{
+        Aos.init({duration: 1000});
+    }, [])
     return (
         <Container>
             <TitleContainer>
@@ -163,15 +168,15 @@ const WhatWeDo = () => {
                     <span align={"right"}></span>
                 </InfoParagraph>
                 <InfoHighlights>
-                    <Highlight>
+                    <Highlight data-aos="fade-left" data-aos-duration="4000">
                         <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#f8ca00", fontSize: "30px" }} />
                         High-quality activity programme
                     </Highlight>
-                    <Highlight>
+                    <Highlight data-aos="fade-left" data-aos-duration="5000">
                         <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#f8ca00", fontSize: "30px" }} />
                         Explore in safety and comfort
                     </Highlight>
-                    <Highlight>
+                    <Highlight data-aos="fade-left" data-aos-duration="6000">
                         <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#f8ca00", fontSize: "30px" }} />
                         Available 7 days a week
                     </Highlight>
@@ -180,7 +185,7 @@ const WhatWeDo = () => {
             <Fonctionalities>
 
                 {framesItems.map((item, index) => (
-                    <Function key={index}>
+                    <Function key={index} data-aos="zoom-in" data-aos-duration="4000">
                         <LinkTo href={item.Link} target="_blank">
                             <Image src={item.img} />
                             <ImageTitle>{item.title}</ImageTitle>

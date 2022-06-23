@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { whyUsItems } from '../../src/data'
 import AnimatedShapes from './AnimatedShapes';
 import { device } from '../device';
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Container = styled.div`
     color:#212529;
     background-color: white;
@@ -176,26 +178,29 @@ const Whyus = () => {
     const handleClick = (index) => {
         setCatIndex(index);
     }
+    useEffect(()=>{
+        Aos.init({duration: 1000});
+    }, [])
     return (
         <Container>
             <AnimatedShapes />
-            <TitleContainer>
+            <TitleContainer >
                 <span></span>
                 <Title>Why Choose Imtiyaz ElDjazayir?</Title>
             </TitleContainer>
-            <InfoContainer>
-                <InfoCategorie>
-                    <CategorieOne onClick={() => handleClick(0)} index={catIndex} >
+            <InfoContainer data-aos="fade-up" data-aos-duration="4000">
+                <InfoCategorie >
+                    <CategorieOne  onClick={() => handleClick(0)} index={catIndex} >
                         <CategorieTitle>BEST EDCUATION </CategorieTitle>
                     </CategorieOne>
-                    <CategorieTwo onClick={() => handleClick(1)} index={catIndex}>
+                    <CategorieTwo  onClick={() => handleClick(1)} index={catIndex}>
                         <CategorieTitle>GREAT TEACHERS</CategorieTitle>
                     </CategorieTwo>
                     <CategorieThree onClick={() => handleClick(2)} index={catIndex}>
                         <CategorieTitle>CERTIFICATION</CategorieTitle>
                     </CategorieThree>
-                </InfoCategorie>
-                <InfoDescription>
+                </InfoCategorie >
+                <InfoDescription >
                     <ImageContainer>
                         <Image src={whyUsItems[catIndex].img} />
                     </ImageContainer>

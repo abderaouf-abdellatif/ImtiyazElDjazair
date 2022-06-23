@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { device } from '../device';
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Container = styled.div`
     width: 100%;
     height: auto;
@@ -103,6 +105,9 @@ const AchievementTwo = styled.div`
     margin-top: 40px;
 `;
 const WhatWeDid = () => {
+    useEffect(()=>{
+        Aos.init({duration: 1000});
+    }, [])
     return (
         <Container imgUrl={process.env.PUBLIC_URL + '/bg.jpg'} >
             <TitleContainer>
@@ -111,14 +116,14 @@ const WhatWeDid = () => {
             </TitleContainer>
             <InfoContainer>
                 <AchievementOne>
-                    <One>                      
+                    <One data-aos="zoom-in" data-aos-duration="4000">                      
                         <Span></Span>
                         <Info>
                             <Number>200+</Number>
                             <Word>Students</Word>
                         </Info>
                     </One>
-                    <Two>
+                    <Two data-aos="zoom-in" data-aos-duration="4000">
                         <Span></Span>
                         <Info>
                             <Number>100%</Number>
@@ -128,14 +133,14 @@ const WhatWeDid = () => {
                 </AchievementOne>
 
                 <AchievementTwo>
-                    <One>
+                    <One data-aos="zoom-in" data-aos-duration="4000">
                         <Span></Span>
                         <Info>
                             <Number>14</Number>
                             <Word>Staff</Word>
                         </Info>
                     </One>
-                    <Two>
+                    <Two data-aos="zoom-in" data-aos-duration="4000">
                         <Span></Span>
                         <Info>
                             <Number>130+</Number>
