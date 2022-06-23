@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { device } from '../device';
-import teacherone from '../images/teacherone.jpg'
+import aboutone from '../images/aboutone.jpg'
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -70,22 +72,26 @@ const ImageContainer = styled.div`
 const Image = styled.img`
 `;
 const MeetImtiyaz = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, [])
     return (
         <Container>
+
             <TitleContainer>
                 <span></span>
                 <Title>Meet Imtiyaz ElDjazair</Title>
             </TitleContainer>
             <Wrapper>
                 <MeetParagraphs>
-                    <Paragraph>Imtiyaz ElDjazair works on the development of creative  education and personal as well organizational development.</Paragraph>
-                    <Paragraph>Our values are Trust, Quality, Fun, Creativity and Continuous Development. We offer a broad range of courses that have been carefully designed to cater for all needs and objectives.</Paragraph>
-                    <Paragraph>Imtiyaz ElDjazair is led by a group of passionate people eager to make empower society through education.</Paragraph>
-                    <Paragraph>Our methodology relies on cognitive psychology and other developmental tools to build programs that not only teach English but makes learners role-models in society. </Paragraph>
-                    <Paragraph>The one true aim of our programmes is to help our students become fluent as English native speakers. Lessons are fun, interactive and designed to be effective in a short period of time.</Paragraph>
+                    <Paragraph data-aos="fade-right" data-aos-duration="4000">Imtiyaz ElDjazair works on the development of creative  education and personal as well organizational development.</Paragraph>
+                    <Paragraph data-aos="fade-right" data-aos-duration="4000">Our values are Trust, Quality, Fun, Creativity and Continuous Development. We offer a broad range of courses that have been carefully designed to cater for all needs and objectives.</Paragraph>
+                    <Paragraph data-aos="fade-right" data-aos-duration="4000">Imtiyaz ElDjazair is led by a group of passionate people eager to make empower society through education.</Paragraph>
+                    <Paragraph data-aos="fade-right" data-aos-duration="4000">Our methodology relies on cognitive psychology and other developmental tools to build programs that not only teach English but makes learners role-models in society. </Paragraph>
+                    <Paragraph data-aos="fade-right" data-aos-duration="4000">The one true aim of our programmes is to help our students become fluent as English native speakers. Lessons are fun, interactive and designed to be effective in a short period of time.</Paragraph>
                 </MeetParagraphs>
                 <ImageContainer>
-                    <Image src={teacherone} />
+                    <Image src={aboutone} />
                 </ImageContainer>
             </Wrapper>
         </Container>

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { device } from '../device';
-import teachertwo from '../images/teachertwo.jpg'
-
+import abouttwo from '../images/abouttwo.jpg'
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Container = styled.div`
     width: 100%;
     height: auto;
@@ -74,6 +75,9 @@ const Paragraph = styled.p`
   font-size: 18px;
 `;
 const History = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, [])
   return (
     <Container imgUrl={process.env.PUBLIC_URL + '/bg.jpg'}>
       <TitleContainer>
@@ -81,13 +85,13 @@ const History = () => {
         <Title>Imtiyaz ElDjazair's History</Title>
       </TitleContainer>
       <Wrapper>
-        <ImageContainer>
-          <Image src={teachertwo} />
+        <ImageContainer data-aos="zoom-in" data-aos-duration="4000">
+          <Image src={abouttwo} />
         </ImageContainer>
         <PragraphContainer>
-          <Paragraph>Founded in July 2021, IMTIYAZ EL DJAZAIR is a vocational school. It offers a variety of courses, from General English courses to ESP and IELTS Preparation courses with native teachers. IMTIYAZ EL DJAZAIR is also an official registration and test centre for the IELTS exam. The first of its kind in the western region of Algeria.
+          <Paragraph data-aos="fade-left" data-aos-duration="4000">Founded in July 2021, IMTIYAZ EL DJAZAIR is a vocational school. It offers a variety of courses, from General English courses to ESP and IELTS Preparation courses with native teachers. IMTIYAZ EL DJAZAIR is also an official registration and test centre for the IELTS exam. The first of its kind in the western region of Algeria.
             It provides an outstanding learning experience for individuals of all ages. From juniors to adults, where they are presented with opportunities in not only learning English, but also improving their social skills, expanding their knowledge and meeting new and interesting people.</Paragraph>
-          <Paragraph> Ever since its conception IMTIYAZ EL DJAZAIR strived to deliver an excellent and fun learning experience with native teachers. Which brought in an overwhelming positive feedback from the students who came to view the school as their home.</Paragraph>
+          <Paragraph data-aos="fade-left" data-aos-duration="4000"> Ever since its conception IMTIYAZ EL DJAZAIR strived to deliver an excellent and fun learning experience with native teachers. Which brought in an overwhelming positive feedback from the students who came to view the school as their home.</Paragraph>
         </PragraphContainer>
       </Wrapper>
     </Container>
