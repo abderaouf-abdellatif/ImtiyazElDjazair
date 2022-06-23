@@ -104,15 +104,14 @@ const AchievementTwo = styled.div`
 `;
 const WhatWeDid = () => {
     return (
-        <Container imgUrl={process.env.PUBLIC_URL + '/bg.jpg'} >
+        <Container imgUrl={process.env.PUBLIC_URL + '/bgour.jpg'} >
             <TitleContainer>
                 <span></span>
                 <Title>What We Did</Title>
             </TitleContainer>
             <InfoContainer>
-
                 <AchievementOne>
-                    <One>
+                    <One>                      
                         <Span></Span>
                         <Info>
                             <Number>200+</Number>
