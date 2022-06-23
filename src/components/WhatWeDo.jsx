@@ -5,7 +5,9 @@ import { framesItems } from '../../src/data';
 import { device } from '../device';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import AnimatedShapes from './AnimatedShapes';
 const Container = styled.div`
+    position: relative;
     color: #212529;
     height: auto;
     display: flex;
@@ -154,6 +156,7 @@ const WhatWeDo = () => {
     }, [])
     return (
         <Container>
+            <AnimatedShapes />
             <TitleContainer>
                 <span></span>
                 <Title>What We Do</Title>

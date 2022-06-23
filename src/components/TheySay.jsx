@@ -4,8 +4,9 @@ import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRig
 import styled from 'styled-components';
 import { TheySayItems } from '../../src/data'
 import { device } from '../device';
+import AnimatedShapes from './AnimatedShapes';
 const MainDiv = styled.div`
-    
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,6 +158,7 @@ const TheySay = () => {
     }
     return (
         <MainDiv>
+            <AnimatedShapes />
             <TitleContainer>
                 <span></span>
                 <Title>Testimonial</Title>
