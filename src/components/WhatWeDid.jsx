@@ -104,7 +104,7 @@ const AchievementTwo = styled.div`
 `;
 const WhatWeDid = () => {
     return (
-        <Container imgUrl={process.env.PUBLIC_URL + '/bgour.jpg'} >
+        <Container imgUrl={process.env.PUBLIC_URL + '/bg.jpg'} >
             <TitleContainer>
                 <span></span>
                 <Title>What We Did</Title>
