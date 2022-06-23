@@ -168,15 +168,15 @@ const WhatWeDo = () => {
                     <span align={"right"}></span>
                 </InfoParagraph>
                 <InfoHighlights>
-                    <Highlight data-aos="fade-left" data-aos-duration="4000">
+                    <Highlight data-aos="fade-left" data-aos-duration="3000">
                         <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#f8ca00", fontSize: "30px" }} />
                         High-quality activity programme
                     </Highlight>
-                    <Highlight data-aos="fade-left" data-aos-duration="5000">
+                    <Highlight data-aos="fade-left" data-aos-duration="3000">
                         <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#f8ca00", fontSize: "30px" }} />
                         Explore in safety and comfort
                     </Highlight>
-                    <Highlight data-aos="fade-left" data-aos-duration="6000">
+                    <Highlight data-aos="fade-left" data-aos-duration="3000">
                         <CheckCircleOutlineIcon style={{ marginRight: "5px", color: "#f8ca00", fontSize: "30px" }} />
                         Available 7 days a week
                     </Highlight>
